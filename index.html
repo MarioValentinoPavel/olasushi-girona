@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Olasushi · Sushi y cocina japonesa en Girona</title>
+<meta name="description" content="Olasushi, Carrer del Carme 75, Girona. Sushi, nigiris, uramakis, pokes y yakisoba preparados a la vista. Menú del día al mediodía. 4,9 en Google con 229 reseñas.">
+<meta name="theme-color" content="#16181a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="es" href="?lang=es"><link rel="alternate" hreflang="ca" href="?lang=ca"><link rel="alternate" hreflang="en" href="?lang=en">
+<meta property="og:title" content="Olasushi · Girona">
+<meta property="og:description" content="Sushi preparado a la vista, en el Carrer del Carme de Girona.">
+<meta property="og:image" content="assets/img/combinado-4.jpg">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/legal.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Olasushi","servesCuisine":["Japonesa","Sushi"],"telephone":"+34600942116","address":{"@type":"PostalAddress","streetAddress":"Carrer del Carme, 75","postalCode":"17004","addressLocality":"Girona","addressRegion":"Girona","addressCountry":"ES"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"229"},"hasMenu":"#carta"}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<header class="top">
+  <a class="brand" href="#main" aria-label="Olasushi, inicio"><i aria-hidden="true"></i>olasushi</a>
+  <nav class="nav" aria-label="Principal">
+    <a href="#carta" data-i18n="n1">La carta</a>
+    <a href="#cocina" data-i18n="n2">Lili y Yao</a>
+    <a href="#pedir" data-i18n="n3">Pedir y visitar</a>
+  </nav>
+  <div class="top-r">
+    <div class="langs" role="group" aria-label="Idioma"><button type="button" data-lang="es">ES</button><button type="button" data-lang="ca">CA</button><button type="button" data-lang="en">EN</button></div>
+    <a class="btn btn-sm" href="tel:+34600942116" data-i18n="call">Llamar</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- PORTADA: la esterilla enrolla el maki y se corta en 8 piezas -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-txt">
+      <p class="hero-k">Carrer del Carme, 75 · Girona</p>
+      <h1 id="h1"><span data-i18n="h1a">Sushi hecho a la vista,</span> <em data-i18n="h1b">pieza a pieza</em></h1>
+      <p class="hero-p" data-i18n="hp">Nigiris, uramakis, sashimi, pokes y yakisoba preparados al momento con producto fresco. Al mediodía, menú del día.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#carta" data-i18n="seeMenu">Ver la carta</a>
+        <a class="btn btn-line" href="tel:+34600942116">600 94 21 16</a>
+      </div>
+      <p class="hero-rate"><b>4,9</b> <span data-i18n="rate">en Google · 229 reseñas</span></p>
+    </div>
+    <div class="maki" id="maki">
+      <canvas id="makiCv" aria-hidden="true"></canvas>
+      <p class="maki-hint" id="makiHint" aria-live="polite"></p>
+      <button type="button" class="maki-again" id="makiAgain" data-i18n="again">Enróllalo tú</button>
+    </div>
+  </section>
+
+  <!-- LA CARTA: cada pieza del maki es una sección -->
+  <section class="carta" id="carta" aria-labelledby="ca-h">
+    <div class="carta-head">
+      <h2 id="ca-h" class="rv" data-i18n="cah">La carta</h2>
+      <p data-i18n="cap">Elige una pieza para ver cada parte de la carta.</p>
+    </div>
+    <div class="pieces" role="tablist" aria-labelledby="ca-h" id="pieces"></div>
+    <div class="menu" id="menu" role="tabpanel" aria-live="polite"></div>
+    <p class="carta-note" data-i18n="cnote">Precios de la carta para llevar. En el restaurante, pregúntanos por el menú del día y por las opciones sin gluten o para intolerancias.</p>
+  </section>
+
+  <!-- LILI Y YAO -->
+  <section class="cocina" id="cocina" aria-labelledby="co-h">
+    <div class="co-imgs">
+      <img src="assets/img/combinado-4.jpg" alt="Bandeja combinada con nigiris, makis, california y sashimi" width="900" height="837" loading="lazy" data-i18n-attr="alt:aCo1">
+      <img src="assets/img/poke-salmon.jpg" alt="Poke de salmón con aguacate, edamame y wakame" width="893" height="900" loading="lazy" data-i18n-attr="alt:aCo2">
+    </div>
+    <div class="co-txt">
+      <h2 id="co-h" class="rv" data-i18n="coh">Lili y Yao, en la barra</h2>
+      <p data-i18n="cop1">Olasushi es el restaurante de Lili y Yao, que llevan años dedicados a la cocina japonesa. Cada plato se prepara a la vista, en el momento, con ingredientes frescos.</p>
+      <ul class="facts">
+        <li data-i18n="f1">Cocina a la vista</li>
+        <li data-i18n="f2">Menú del día al mediodía</li>
+        <li data-i18n="f3">Nos adaptamos a intolerancias</li>
+        <li data-i18n="f4">Para tomar aquí o para llevar</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="resenas" aria-labelledby="r-h">
+    <h2 id="r-h" class="rv" data-i18n="rh">4,9 en Google</h2>
+    <div class="rs">
+      <blockquote><p lang="es">«Comida espectacular, trato de 10 y local súper acogedor! […] sushi muy bien presentado y muy rico.»</p><cite>Google</cite></blockquote>
+      <blockquote><p lang="es">«Comida espectacular a buen precio, sobretodo por la calidad que ofrece. El servicio es de 10 […] Se puede ver cómo preparan tus platos.»</p><cite>Google</cite></blockquote>
+      <blockquote><p lang="es">«Buen servicio y calidad-precio. El menu de día es completo y variado. Servicio muy amable y atento. Se adaptan a las intolerancias.»</p><cite>Google</cite></blockquote>
+      <blockquote><p lang="es">«La comida es muy deliciosa y los ingredientes son super frescos.»</p><cite>Google</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- PEDIR Y VISITAR -->
+  <section class="pedir" id="pedir" aria-labelledby="pe-h">
+    <div class="pe-txt">
+      <h2 id="pe-h" class="rv" data-i18n="peh">Ven a comer o pide para llevar</h2>
+      <div class="pe-cta">
+        <a class="btn" href="tel:+34600942116" data-i18n="callFull">Llamar al 600 94 21 16</a>
+        <a class="btn btn-line" href="https://glovoapp.com/es/es/girona/stores/olasushi-girona" target="_blank" rel="noopener" data-i18n="glovo">Pedir en Glovo</a>
+      </div>
+      <dl>
+        <dt data-i18n="d1">Dirección</dt><dd>Carrer del Carme, 75 · 17004 Girona</dd>
+        <dt data-i18n="d2">Horario</dt><dd><span data-i18n="h1">Martes a sábado</span><br>12:30 – 15:15 · 19:00 – 22:15<br><span data-i18n="h2">Domingo cerrado</span></dd>
+      </dl>
+    </div>
+    <div class="cc-map pe-map" data-src="https://www.google.com/maps?q=Olasushi,+Carrer+del+Carme+75,+17004+Girona&output=embed" data-title="Mapa: Olasushi"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-row">
+    <p>Olasushi · Carrer del Carme, 75 · Girona</p>
+    <nav class="foot-links" aria-label="Información legal">
+      <a href="aviso-legal.html" data-i18n="lg1">Aviso legal</a>
+      <a href="privacidad.html" data-i18n="lg2">Privacidad</a>
+      <a href="cookies.html" data-i18n="lg3">Cookies</a>
+      <button type="button" data-cookies-open data-i18n="lg4">Configurar cookies</button>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/lang.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/i18n.js" data-site="olasushi-girona"></script>
+<script src="js/consent.js" data-site="olasushi-girona"></script>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
