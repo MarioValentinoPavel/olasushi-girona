@@ -11,7 +11,7 @@ window.I18N_CA = {
   f1: 'Cuina a la vista', f2: 'Menú del dia al migdia', f3: 'Ens adaptem a les intoleràncies', f4: 'Per menjar aquí o per emportar',
   rh: '4,9 a Google', peh: 'Vine a dinar o demana per emportar', callFull: 'Trucar al 600 94 21 16', glovo: 'Demanar a Glovo',
   d1: 'Adreça', d2: 'Horari', h1: 'De dimarts a dissabte', h2: 'Diumenge tancat',
-  lg1: 'Avís legal', lg2: 'Privacitat', lg3: 'Galetes', lg4: 'Configurar galetes'
+  lg1: 'Avís legal', lg2: 'Privacitat', lg3: 'Galetes', lg4: 'Configurar galetes', aHero: 'Nigiris variats acabats de preparar'
 };
 window.I18N_EN = {
   skip: 'Skip to content', n1: 'Menu', n2: 'Lili and Yao', n3: 'Order and visit', call: 'Call',
@@ -26,5 +26,5 @@ window.I18N_EN = {
   f1: 'Open kitchen', f2: 'Set lunch menu', f3: 'We adapt to intolerances', f4: 'Eat in or take away',
   rh: '4.9 on Google', peh: 'Come and eat, or order to take away', callFull: 'Call 600 94 21 16', glovo: 'Order on Glovo',
   d1: 'Address', d2: 'Opening hours', h1: 'Tuesday to Saturday', h2: 'Closed on Sunday',
-  lg1: 'Legal notice', lg2: 'Privacy', lg3: 'Cookies', lg4: 'Cookie settings'
+  lg1: 'Legal notice', lg2: 'Privacy', lg3: 'Cookies', lg4: 'Cookie settings', aHero: 'Freshly made assorted nigiri'
 };

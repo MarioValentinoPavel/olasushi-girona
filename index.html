@@ -11,7 +11,9 @@
 <meta property="og:title" content="Olasushi · Girona">
 <meta property="og:description" content="Sushi preparado a la vista, en el Carrer del Carme de Girona.">
 <meta property="og:image" content="assets/img/combinado-4.jpg">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/premium.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/legal.css">
 <script type="application/ld+json">
@@ -47,10 +49,9 @@
       </div>
       <p class="hero-rate"><b>4,9</b> <span data-i18n="rate">en Google · 229 reseñas</span></p>
     </div>
-    <div class="maki" id="maki">
-      <canvas id="makiCv" aria-hidden="true"></canvas>
-      <p class="maki-hint" id="makiHint" aria-live="polite"></p>
-      <button type="button" class="maki-again" id="makiAgain" data-i18n="again">Enróllalo tú</button>
+    <div class="cuts" id="cuts" role="img" aria-label="Nigiris variados recién preparados" data-i18n-attr="aria-label:aHero">
+      <span class="cut" style="--k:0"></span><span class="cut" style="--k:1"></span><span class="cut" style="--k:2"></span>
+      <p class="cuts-tag" aria-hidden="true">鮨</p>
     </div>
   </section>
 
@@ -129,6 +130,8 @@
 <script src="js/consent.js" data-site="olasushi-girona"></script>
 <script src="js/vendor/gsap.min.js"></script>
 <script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/lenis.min.js"></script>
+<script src="js/premium.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
